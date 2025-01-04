@@ -5,28 +5,41 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    int bispo = 1;
+do{
+printf("Digite quantas casas o bispo deve andar... \n");
+    scanf("%d", &bispo);
+if(bispo <= 5){
+            printf("Bispo andar %d na diagonal superior direita. \n", bispo);
+        } else {
+                printf("Digite um número de 1 a 5! \n", bispo);
+       }
+        } while (bispo >= 6);
+   printf("Vamos para a próxima peça.  \n");
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+   int torre = 1;
+do{
+printf("Digite quantas casas a torre deve andar... \n");
+    scanf("%d", &torre);
+if(torre <= 5){
+            printf("Torre andar %d casas para a direita. \n", torre);
+        } else {
+                printf("Digite um número de 1 a 5! \n", torre);
+       }
+        } while (torre >= 6);
+   printf("Vamos para a próxima peça.  \n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
-
+   int rainha = 1;
+do{
+printf("Digite quantas casas a rainha deve andar... \n");
+    scanf("%d", &rainha);
+if(rainha <= 8){
+            printf("Rainha andar %d casas para a esquerda. \n", rainha);
+        } else {
+                printf("Digite um número de 1 a 8! \n", rainha);
+       }
+        } while (rainha >= 9);
+   printf("Movimentações finalizadas.  \n");
+   
     return 0;
 }
